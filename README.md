@@ -16,13 +16,15 @@ Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu and Tat-Seng Chua (20
 
 # Dataset
 
-`data/ratings_Digital_Music.csv`
+Amazon(2014) http://jmcauley.ucsd.edu/data/amazon/links.html
 
-Download from http://jmcauley.ucsd.edu/data/amazon/links.html (Choose Digital Music: rating only)
+Yelp(2020) https://www.yelp.com/dataset
 
-程序将数据集按0.8/0.1/0.1的比例划分为训练集、验证集、测试集。
+For example:
+`data/ratings_Digital_Music.csv` (Amazon Digital Music: rating only)
 
-注：数据集前三列分别为用户id、产品id、评分（1~5）。
+注：本实验将数据集按0.8/0.1/0.1的比例划分为训练集、验证集、测试集。
+数据集前三列分别为用户id、产品id、评分（1~5）。
 若使用了amazon数据集json格式，可使用amazon_preprocess.py预处理。
 
 # Running
@@ -62,5 +64,11 @@ python main.py
         <td>39387</td>
         <td>23033</td>
         <td>1.093927</td>
+    </tr>
+    <tr>
+        <td>Yelp (8,021,121)</td>
+        <td>1968703</td>
+        <td>209393</td>
+        <td>2.025330</td>
     </tr>
 </table>
