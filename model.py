@@ -68,7 +68,7 @@ class NeuMF(nn.Module):
         super().__init__()
         if mlp_layers is None:
             mlp_layers = [10]
-        self.gmf = GMF(num_user, num_item, mf_dim=10, trainable=not use_pretrain)  # 默认直接使用预训练好的权重
+        self.gmf = GMF(num_user, num_item, mf_dim, trainable=not use_pretrain)  # 默认直接使用预训练好的权重
         self.mlp = MLP(num_user, num_item, mlp_layers=mlp_layers, trainable=not use_pretrain)
         self.linear = nn.Sequential(
             nn.Linear(mf_dim + mlp_layers[-1], 1),

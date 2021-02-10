@@ -1,9 +1,8 @@
 
 # Neural Collaborative Filtering
 
-参考论文：
-
-Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu and Tat-Seng Chua (2017). Neural Collaborative Filtering. In Proceedings of WWW '17, Perth, Australia, April 03-07, 2017.
+This is my implementation for the paper:
+>Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu and Tat-Seng Chua (2017). Neural Collaborative Filtering. In Proceedings of WWW '17, Perth, Australia, April 03-07, 2017.
 
 该代码包含GMF、MLP、NeuMF
 
@@ -16,8 +15,7 @@ Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu and Tat-Seng Chua (20
 
 # Dataset
 
-`data/ratings_Digital_Music.csv`
-
+`data/ratings_Digital_Music.csv`:
 Download from http://jmcauley.ucsd.edu/data/amazon/links.html (Choose Digital Music: rating only)
 
 程序将数据集按0.8/0.1/0.1的比例划分为训练集、验证集、测试集。
