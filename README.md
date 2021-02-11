@@ -25,10 +25,15 @@ For example:
 运行`main.py`时，数据集按0.8/0.1/0.1的比例划分为训练集、验证集、测试集。
 若使用了amazon/yelp数据集json格式，可使用data_preprocess.py预处理。
 
+For example:
+```shell script
+python data_preprocess.py --data_path Digital_Music_5.json --data_source amazon --save_file amazon_music_ratings.csv
+```
+
 # Running
 Train and evaluate the model
 ```
-python main.py --device cuda:0
+python main.py --dataset_file data/ratings_Digital_Music.csv
 ```
 
 # Experiment
