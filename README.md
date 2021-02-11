@@ -42,30 +42,48 @@ python main.py --dataset_file data/ratings_Digital_Music.csv
         <th>Dataset</th>
         <th>number of users</th>
         <th>number of items</th>
+        <th>MSE of GMF</th>
+        <th>MSE of MLP</th>
         <th>MSE of NeuMF</th>
     </tr>
     <tr>
         <td><a href="http://files.grouplens.org/datasets/movielens/ml-latest-small.zip">movielens-small</a> (100,836)</td>
         <td>610</td>
         <td>9724</td>
+        <td>-</td>
+        <td>-</td>
         <td>0.740655</td>
     </tr>
     <tr>
         <td>Amazon music-small (64,706)</td>
         <td>5541</td>
         <td>3568</td>
+        <td>-</td>
+        <td>-</td>
         <td>0.822472</td>
     </tr>
     <tr>
         <td>Amazon music (836,006)</td>
         <td>478235</td>
         <td>266414</td>
+        <td>-</td>
+        <td>-</td>
         <td>0.825261</td>
     </tr>
     <tr>
-        <td>Amazon Clothing, Shoes and Jewelry (278,677)</td>
-        <td>39387</td>
-        <td>23033</td>
-        <td>1.093927</td>
+        <td>Amazon Clothing, Shoes and Jewelry (5,748,919)</td>
+        <td>3117268</td>
+        <td>1136004</td>
+        <td>1.520218</td>
+        <td>1.503066</td>
+        <td>1.502135</td>
+    </tr>
+    <tr>
+        <td>Yelp (8,021,121)</td>
+        <td>1968703</td>
+        <td>209393</td>
+        <td>2.222917</td>
+        <td>2.041745</td>
+        <td>2.041674</td>
     </tr>
 </table>
