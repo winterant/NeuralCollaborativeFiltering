@@ -15,18 +15,20 @@ This is my implementation for the paper:
 
 # Dataset
 
-`data/ratings_Digital_Music.csv`:
-Download from http://jmcauley.ucsd.edu/data/amazon/links.html (Choose Digital Music: rating only)
+1. Amazon(2014) http://jmcauley.ucsd.edu/data/amazon/links.html
+2. Yelp(2020) https://www.yelp.com/dataset
 
-程序将数据集按0.8/0.1/0.1的比例划分为训练集、验证集、测试集。
+For example:
+`data/ratings_Digital_Music.csv` (Amazon Digital Music: rating only)
 
 注：数据集前三列分别为用户id、产品id、评分（1~5）。
-若使用了amazon数据集json格式，可使用amazon_preprocess.py预处理。
+运行`main.py`时，数据集按0.8/0.1/0.1的比例划分为训练集、验证集、测试集。
+若使用了amazon/yelp数据集json格式，可使用data_preprocess.py预处理。
 
 # Running
 Train and evaluate the model
 ```
-python main.py
+python main.py --device cuda:0
 ```
 
 # Experiment
